@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Treino Git</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos básicos para o corpo da página */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e9ecef;
+            color: #495057;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container principal */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #adb5bd;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 5px;
+        }
+
+        /* Estilos para as seções de conteúdo */
+        .secao {
+            padding: 20px 0;
+        }
+
+        h2 {
+            color: #007bff;
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .lista-git {
+            list-style: none;
+            padding: 0;
+        }
+
+        .lista-git li {
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .lista-git li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Estilos para o botão */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            margin-top: auto; /* Empurra o rodapé para a parte inferior */
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            background-color: #343a40;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Minha Primeira Página com Git e GitHub</h1>
+            <p>Um projeto de exemplo para praticar controle de versão</p>
+        </header>
+
+        <main>
+            <section class="secao">
+                <h2>O que é Git?</h2>
+                <p>
+                    Git é um sistema de controle de versão distribuído, o que significa que ele rastreia
+                    as alterações em qualquer conjunto de arquivos. É a ferramenta que usamos para gerenciar
+                    o histórico do nosso código.
+                </p>
+            </section>
+
+            <section class="secao">
+                <h2>Como Usar?</h2>
+                <p>Vamos adicionar um novo recurso para praticar. Siga estes passos simples no terminal:</p>
+                <ul class="lista-git">
+                    <li>1. Faça uma alteração nesta página (por exemplo, mude um texto).</li>
+                    <li>2. Salve o arquivo.</li>
+                    <li>3. Abra o terminal na pasta do projeto.</li>
+                    <li>4. Use `git add .` para preparar suas alterações.</li>
+                    <li>5. Use `git commit -m "Adicionando novo recurso"` para salvar a versão.</li>
+                    <li>6. Use `git push` para enviar para o GitHub.</li>
+                </ul>
+            </section>
+
+            <section class="secao">
+                <h2>Seção de Exemplo</h2>
+                <p>
+                    Esta seção foi criada para vocês praticarem a colaboração. Seu amigo pode
+                    fazer uma alteração aqui, enviar para o GitHub e você pode usar o comando `git pull`
+                    para obter as alterações dele.
+                </p>
+                <a href="#" class="btn">Saiba Mais</a>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 - Todos os direitos reservados para a nossa jornada com Git.</p>
+    </footer>
+
+</body>
+</html>
